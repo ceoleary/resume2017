@@ -5,16 +5,22 @@
   padding: 0.2em 0;
 }
 
+h1{
+  font-family: 'Josefin Slab', serif;
+}
+h2{
+  font-family: 'Josefin Slab', serif;
+}
+
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-nav {
-  position: fixed;
-  top: 0px;
-  z-index: 1;
+nav{
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
 }
 
 .active{
@@ -28,7 +34,7 @@ nav {
 }
 
 .catie-brand-logo{
-  width: 80px;
+  width: 115px;
 }
 
 .hero-unit {

@@ -9,6 +9,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
@@ -28,20 +32,22 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav>
-      <div class="nav-wrapper valign-wrapper">
-        <a href="#" class="brand-logo right"><img src="/images/logo.png" alt="cate" class="catie-brand-logo valign"></a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">Work &#38; Education</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+       <nav>
+         <div class="nav-wrapper">
+           <a href="#!" class="brand-logo"><img src="images/logo.png" alt="cate" class="catie-brand-logo"></a>
+           <ul class="right hide-on-med-and-down">
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#work">Work &#38; Education</a></li>
+             <li><a href="#portfolio">Portfolio</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </div>
+       </nav>
+     </div>
 
     <div class="header">
-      <h1>Catherine O'Leary</h1>
+      <h1>Catie O'Leary</h1>
       <h2>Web Developer</h2>
     </div>
 
@@ -83,27 +89,36 @@
         <div class="row">
           <form class="col s12">
             <div class="row">
-              <div class="input-field col s6">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
                 <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
+                <label for="name">Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
+                <i class="material-icons prefix">phone</i>
+                <input id="phone" type="tel" class="validate">
+                <label for="phone">Phone Number</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mail</i>
                 <input id="email" type="email" class="validate">
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
                 <textarea id="textarea1" class="materialize-textarea"></textarea>
                 <label for="textarea1">Message</label>
               </div>
             </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
           </form>
         </div>
       </div>
